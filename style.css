@@ -1,0 +1,27 @@
+
+body{
+    background:url(./image.png);
+    /* background-position:1em 1em; */
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22%;
+}
+
+span{
+    font-family: 'Orbitron', sans-serif;
+    height: 8rem;
+    width: 9rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 5em;
+    background-color: #36211A;
+    color: #FEFEAD;
+    border-radius: 3rem;
+    box-shadow: 5px 10px 20px white inset;
+    text-align: center;
+}
