@@ -1,9 +1,11 @@
 
 body{
     background:url(./image.png);
-    /* background-position:1em 1em; */
+    background-position:cen;
     background-size:cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 .container{
     display: flex;
@@ -14,14 +16,14 @@ body{
 
 span{
     font-family: 'Orbitron', sans-serif;
-    height: 8rem;
-    width: 9rem;
-    margin-right: 2rem;
+    height: 1.5em;
+    width: 2em;
+    margin-right: 0.8em;
     padding: 1rem;
     font-size: 5em;
     background-color: #36211A;
     color: #FEFEAD;
-    border-radius: 3rem;
+    border-radius: 0.8em;
     box-shadow: 5px 10px 20px white inset;
     text-align: center;
 }

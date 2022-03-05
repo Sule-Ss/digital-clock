@@ -13,7 +13,17 @@ function clock() {
   m < 10 ? (minute.textContent = "0" + m) : (minute.textContent = m);
   h < 10 ? (hour.textContent = "0" + h) : (hour.textContent = h);
 
-  h < 12 ? (pm_am.textContent = "AM") : (pm_am.textContent = "PM");
+  h < 12 ? (pm_am.textContent = "AM") : (pm_am.textContent = "PM" && h-12);
 }
 
 setInterval("clock()", 1000);
+
+//2.yol:
+
+/* 
+const saat = setInterval(() => { //ekrana şuanın saatini ss:dd:ss şeklinde yazdırır.
+    const a = new Date();
+    const b = a.toLocaleTimeString();
+    document.body.innerHTML = b;
+}, 1000);
+*/
