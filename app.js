@@ -13,7 +13,7 @@ function clock() {
   m < 10 ? (minute.textContent = "0" + m) : (minute.textContent = m);
   h < 10 ? (hour.textContent = "0" + h) : (hour.textContent = h);
 
-  h < 12 ? (pm_am.textContent = "AM") : (pm_am.textContent = "PM" && h-12);
+  h <= 12 ? (pm_am.textContent = "AM") : ((pm_am.textContent = "PM") && (hour.textContent = hour.textContent - 12));
 }
 
 setInterval("clock()", 1000);
